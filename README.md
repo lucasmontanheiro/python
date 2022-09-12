@@ -1,1 +1,9 @@
-# python studies
+# Python Studies
+
+## Basic
+
+## Intermediate
+
+## Advanced
+
+## Master
