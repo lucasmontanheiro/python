@@ -11,7 +11,7 @@
 
 *Control Flow (If/Else)*
 
-*Loops and iterables*
+*06 - Loops and iterables*
 
 *Basic Data Structure*
 
