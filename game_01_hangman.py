@@ -3,6 +3,13 @@
 word = "house"
 chances = 0
 display = ""
+guesses = []
+display2 = len(word)*"_ "
+
+def hangmanWord(guess):
+  if word.find(guess):
+    display2.replace("_", guess)
+  return display2
 
 while chances <= (len(word) - 1):
   
@@ -10,12 +17,12 @@ while chances <= (len(word) - 1):
 
   print("Your guess: " + name1)
 
+  guesses.append(name1)
+
   for w in word:
     if w == name1:
-      display += " " + name1
-    else:
-      display += " _"
+      hangmanWord(name1)
   chances += 1
 
-  print(display)
+  print(display2)
   print(f'You have {len(word) - chances} chances!')
