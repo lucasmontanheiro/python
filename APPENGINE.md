@@ -16,10 +16,14 @@ You can use the gcloud CLI to manage your project's resources from the command l
 
 Clone a sample app
 Instead of creating a new app, clone the sample "Hello, world" app from GitHub:
+```
     $ git clone https://github.com/GoogleCloudPlatform/python-docs-samples
+```
 
 To explore the app's source files, open the app's directory in the Cloud Shell Editor:
+```
     $ cloudshell workspace python-docs-samples/appengine/standard_python3/hello_world
+```
 
 The app consists of:
 
@@ -32,12 +36,16 @@ The app consists of:
 To open a shell in Cloud Shell Editor, click the Terminal menu and select New Terminal.
 
 To create and activate a virtual environment in which to test your app, use the following commands:
+```
     $ virtualenv --python python3 ~/envs/hello_world
     $ source ~/envs/hello_world/bin/activate
     $ pip install -r requirements.txt
+```
 
 To run your app, use the following command:
+```
     $ python main.py
+```
 
 - When the app is running, the output in Cloud Shell shows the following: "Running on http://127.0.0.1:8080"
 - In the Console, click  Web preview and choose Preview on port 8080.
@@ -49,13 +57,17 @@ To run your app, use the following command:
 Now that you know your app is running correctly, deploy it to App Engine:
 
 In Cloud Shell, configure gcloud to use your project:
-
+```
     $ gcloud config set project gifted-fragment-362404
+```
+
 The App Engine plugin uses gcloud to deploy your app, and gcloud needs to know which project to deploy your app to.
 
 Deploy your app:
-
+```
 gcloud app deploy
+```
+
 If you are prompted, "Do you want to continue?", type Y.
 
 When this process is finished, the output shows the following:
