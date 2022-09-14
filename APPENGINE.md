@@ -12,9 +12,8 @@ You can use the gcloud CLI to manage your project's resources from the command l
 - When prompted, choose a region that's closest to you.
 - The process is complete when you get this message: "Success! The app is now created."
 
-## SECOND STEP
+## STEP 3: Clone a sample app
 
-Clone a sample app
 Instead of creating a new app, clone the sample "Hello, world" app from GitHub:
 ```
     $ git clone https://github.com/GoogleCloudPlatform/python-docs-samples
@@ -31,7 +30,7 @@ The app consists of:
 - requirements.txt, a text file listing package dependencies that the app requires
 - app.yaml, an App Engine configuration file with the minimum required settings
 
-## STEP 3: Test the app before deploying it
+## STEP 4: Test the app before deploying it
 
 To open a shell in Cloud Shell Editor, click the Terminal menu and select New Terminal.
 
@@ -52,7 +51,7 @@ To run your app, use the following command:
 - The app's tab displays "Hello World!".
 - To stop the app, in Cloud Shell enter Ctrl+C.
 
-## STEP 4: Deploy the app
+## STEP 5: Deploy the app
 
 Now that you know your app is running correctly, deploy it to App Engine:
 
