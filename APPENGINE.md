@@ -1,10 +1,11 @@
-## FIRST STEP: 
+## STEP 1: Select a project, or create a new one.
 
-Select a project, or create a new one.
 To open Cloud Shell, click Cloud Shell. While these steps show you how to work in Cloud Shell, you can use a similar process when you work in your local environment.
 
 Enable App Engine:
+```
     $ gcloud app create
+```
 
 You can use the gcloud CLI to manage your project's resources from the command line or in scripts that you create.
 - If an authorization window appears, click Authorize.
@@ -12,6 +13,7 @@ You can use the gcloud CLI to manage your project's resources from the command l
 - The process is complete when you get this message: "Success! The app is now created."
 
 ## SECOND STEP
+
 Clone a sample app
 Instead of creating a new app, clone the sample "Hello, world" app from GitHub:
     $ git clone https://github.com/GoogleCloudPlatform/python-docs-samples
@@ -25,8 +27,8 @@ The app consists of:
 - requirements.txt, a text file listing package dependencies that the app requires
 - app.yaml, an App Engine configuration file with the minimum required settings
 
-## THIRD STEP
-Test the app before deploying it
+## STEP 3: Test the app before deploying it
+
 To open a shell in Cloud Shell Editor, click the Terminal menu and select New Terminal.
 
 To create and activate a virtual environment in which to test your app, use the following commands:
@@ -42,8 +44,8 @@ To run your app, use the following command:
 - The app's tab displays "Hello World!".
 - To stop the app, in Cloud Shell enter Ctrl+C.
 
-## FOURTH STEP
-Deploy the app
+## STEP 4: Deploy the app
+
 Now that you know your app is running correctly, deploy it to App Engine:
 
 In Cloud Shell, configure gcloud to use your project:
@@ -55,7 +57,6 @@ Deploy your app:
 
 gcloud app deploy
 If you are prompted, "Do you want to continue?", type Y.
-
 
 When this process is finished, the output shows the following:
 
