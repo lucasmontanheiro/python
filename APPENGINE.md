@@ -57,14 +57,14 @@ Now that you know your app is running correctly, deploy it to App Engine:
 
 In Cloud Shell, configure gcloud to use your project:
 ```
-    $ gcloud config set project gifted-fragment-362404
+    gcloud config set project gifted-fragment-362404
 ```
 
 The App Engine plugin uses gcloud to deploy your app, and gcloud needs to know which project to deploy your app to.
 
 Deploy your app:
 ```
-gcloud app deploy
+    gcloud app deploy
 ```
 
 If you are prompted, "Do you want to continue?", type Y.
