@@ -51,6 +51,13 @@ To run your app, use the following command:
 - The app's tab displays "Hello World!".
 - To stop the app, in Cloud Shell enter Ctrl+C.
 
+## Step 4.5: Generate requirements.txt
+
+```
+    pip freeze > requirements.txt
+```
+That records an environment's current package list into requirements.txt.
+
 ## STEP 5: Deploy the app
 
 Now that you know your app is running correctly, deploy it to App Engine:
